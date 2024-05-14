@@ -220,5 +220,12 @@ public class Gauss_jordan_method{
                 System.out.println("_____________________ \n"); 
             }
  
+            // Showing Result 
+        System.out.println("x  = " + Expression_1[3] );
+        System.out.println("y  = " + Expression_2[3] );
+        System.out.println("z  = " + Expression_3[3] );
+
+
+        sc.close();
     }
 }
