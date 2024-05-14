@@ -93,6 +93,38 @@ public class Gauss_jordan_method{
         Functions.Print_Expression(Expression_3);
         System.out.println("_____________________ \n");
 
+         // Checking already have 1 at 0 index
+         if(Expression_2[0] == 1 && Expression_1[0] != 1){
+            int[] New_Expression = new int[3];
+            New_Expression =  Expression_1;
+            Expression_1 =  Expression_2;
+            Expression_2 =  New_Expression;
+
+            System.out.println("Row 1 <--> Row 2");
+
+            Functions.Print_Expression(Expression_1);
+            Functions.Print_Expression(Expression_2);
+            Functions.Print_Expression(Expression_3);
+            System.out.println("_____________________ \n");
+
+        }
+        if(Expression_3[0] == 1 && Expression_1[0] != 1){
+            int[] New_Expression = new int[3];
+            New_Expression =  Expression_1;
+            Expression_1 =  Expression_3;
+            Expression_3 =  New_Expression;
+
+            System.out.println("Row 1 <--> Row 3");
+
+            Functions.Print_Expression(Expression_1);
+            Functions.Print_Expression(Expression_2);
+            Functions.Print_Expression(Expression_3);
+            System.out.println("_____________________ \n");
+        }        
+    
+    
+    
+
         
     }
 }
