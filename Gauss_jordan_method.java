@@ -122,7 +122,46 @@ public class Gauss_jordan_method{
             System.out.println("_____________________ \n");
         }        
     
+        if(Expression_1[0] != 1){
+
+            // Divide    
+            Functions.Divide(0, Expression_1);
+            
+            Functions.Print_Expression(Expression_1);
+            Functions.Print_Expression(Expression_2);
+            Functions.Print_Expression(Expression_3);
+            System.out.println("_____________________ \n");
+            }
     
+            //Subtract row 2
+            if(Expression_2[0] != 0){
+            Functions.Subtract(0, Expression_2, Expression_1);
+    
+            Functions.Print_Expression(Expression_1);
+            Functions.Print_Expression(Expression_2);
+            Functions.Print_Expression(Expression_3);
+            System.out.println("_____________________ \n");
+            }
+    
+            // Subtract row 3
+            if(Expression_3[0] != 0){
+            Functions.Subtract(0, Expression_3, Expression_1);
+    
+            Functions.Print_Expression(Expression_1);
+            Functions.Print_Expression(Expression_2);
+            Functions.Print_Expression(Expression_3);
+            System.out.println("_____________________ \n");
+            }
+    
+            //Divide row 2
+            if(Expression_2[1] != 1){
+            Functions.Divide(1, Expression_2);
+    
+            Functions.Print_Expression(Expression_1);
+            Functions.Print_Expression(Expression_2);
+            Functions.Print_Expression(Expression_3);
+            System.out.println("_____________________ \n");
+            }
     
 
         
