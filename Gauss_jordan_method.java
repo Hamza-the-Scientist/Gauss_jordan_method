@@ -71,6 +71,28 @@ class Functions{
 // Main code-------------------------------------------------------------------------------
 public class Gauss_jordan_method{
     public static void main(String args[]){
+         Scanner sc = new Scanner(System.in);
+        
+        // Taking Input
+        System.out.print("Enter an Expression_1 : ");
+        String Equation1 = sc.nextLine();
+
+        System.out.print("Enter an Expression_2 : ");
+        String Equation2 = sc.nextLine();
+
+        System.out.print("Enter an Expression_3 : ");
+        String Equation3 = sc.nextLine();
+
+        // Calling function in to an new Array
+        int[] Expression_1 = Functions.Split_Expression(Equation1);
+        int[] Expression_2 = Functions.Split_Expression(Equation2);
+        int[] Expression_3 = Functions.Split_Expression(Equation3);
+
+        Functions.Print_Expression(Expression_1);
+        Functions.Print_Expression(Expression_2);
+        Functions.Print_Expression(Expression_3);
+        System.out.println("_____________________ \n");
+
         
     }
 }
