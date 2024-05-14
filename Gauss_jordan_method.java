@@ -185,5 +185,40 @@ public class Gauss_jordan_method{
         }
 
         
+        // Subtract row 2 ==> 0
+        if(Expression_2[2] != 0){
+            Functions.Subtract(2, Expression_2, Expression_3);
+    
+            Functions.Print_Expression(Expression_1);
+            Functions.Print_Expression(Expression_2);
+            Functions.Print_Expression(Expression_3);
+            System.out.println("_____________________ \n"); 
+            // Here Gauss Elimination method end
+    
+            }
+
+            // Expnad the code to Gauss Jordan method
+    
+            //Subtract row 1 ==> 0
+            if(Expression_1[2] != 0){
+                Functions.Subtract(2, Expression_1, Expression_3);
+        
+                Functions.Print_Expression(Expression_1);
+                Functions.Print_Expression(Expression_2);
+                Functions.Print_Expression(Expression_3);
+                System.out.println("_____________________ \n"); 
+        
+            }
+    
+            // Subtract Row 1 ==> 0
+            if(Expression_1[1] != 0){
+                Functions.Subtract(1, Expression_1, Expression_2);
+        
+                Functions.Print_Expression(Expression_1);
+                Functions.Print_Expression(Expression_2);
+                Functions.Print_Expression(Expression_3);
+                System.out.println("_____________________ \n"); 
+            }
+ 
     }
 }
