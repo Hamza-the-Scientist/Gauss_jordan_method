@@ -1,0 +1,35 @@
+<project name="Gauss_jordan_method" default="run" basedir=".">
+
+    <target name="clean">
+        <delete dir="bin"/>
+        <delete dir="src"/>
+        <delete dir="lib"/>
+    </target>
+
+    <target name="create" depends="clean">
+        <mkdir dir="bin"/>
+        <mkdir dir="lib"/>
+        <mkdir dir="src"/>  
+    </target>
+
+    <target name="copy">
+        <copy overwrite="true" todir="lib">
+            <fileset dir="." includes="*.jar"></fileset>
+        </copy>
+
+        <copy overwrite="true" todir="src">
+            <fileset dir="." includes="*.java"></fileset>
+        </copy>
+    </target>
+
+    <target name="compile" depends="copy">
+        <javac includeantruntime="true" srcdir="src" destdir="bin" includes="*.java">
+        </javac>
+    </target>
+
+    <target name="run" depends="compile">
+        <java classname="main.java" fork="true"></java>
+
+    </target>
+
+</project>
